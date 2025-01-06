@@ -3,7 +3,7 @@
 //and can catch errors in your configuration in code editors with TypeScript tooling
 import {defineField, defineType} from 'sanity';
 export const  categoryType = defineType({
-    name: 'category',
+  name: 'category',
     title: 'Categories',
     type: 'document',
     fields:[

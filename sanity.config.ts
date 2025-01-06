@@ -10,7 +10,7 @@ import { dataset, projectId, apiVersion } from './sanity/env'
 // import {schemaTypes} from './schemaTypes'
 import { schemas } from './sanity/schemaTypes/schemas';
 
-const { authorType, blogCategoryType, categoryType, blogType, productType, trendingType, customerReviewType } = schemas;
+const {pageType, authorType, blogCategoryType, categoryType, blogType, productType, trendingType, customerReviewType } = schemas;
 
 export default defineConfig({
    name:'default',
@@ -23,7 +23,7 @@ export default defineConfig({
   basePath:"/admin",
   plugins: [structureTool()],
  schema:{
-    types:[ authorType, blogCategoryType, categoryType, blogType, productType, trendingType, customerReviewType]
+    types:[ pageType, authorType, blogCategoryType, categoryType, blogType, productType, trendingType, customerReviewType]
  }, 
 
 })
