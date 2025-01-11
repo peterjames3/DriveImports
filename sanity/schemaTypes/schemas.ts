@@ -1,21 +1,30 @@
 //barrel file
-import { blogType } from "./blogType";
-import { authorType } from './authorType';
-import { blogCategoryType} from './blogCategoryType';
-import { productType } from "./productType";
-import { categoryType } from "./categoryType";
-import { trendingType } from "./trendingType";
-import { customerReviewType } from "./customerReviewTypes";
-import { pageType } from "./pageType";
+import { blogType } from './components/blogType'
+import { authorType } from './components/authorType';
+import { blogCategoryType} from './components/blogCategoryType';
+import { productType } from "./components/productType";
+import { categoryType } from "./components/categoryType";
+import { trendingType } from "./components/trendingType";
+import { customerReviewType } from "./components/customerReviewTypes";
+import { homePageType } from './pages/homePageType';
+import { heroType } from "./components/heroType";
+import { aboutUsPageType } from './pages/aboutUsPageType';
+import { servicesPageType } from './pages/servicesPageType';
+//import { homePageType } from "./homePageType";
+//import { textWithIllustrationType } from './textWithIllustratonType'
+
+
 
 export const schemas = {
+  homePageType,
+  aboutUsPageType,
+  servicesPageType,
+  heroType,
   authorType,
-  pageType,
   blogCategoryType,
   blogType,
   productType,
   trendingType,
   categoryType,
   customerReviewType,
-
 };

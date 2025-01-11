@@ -3,6 +3,8 @@
 import { createClient } from 'next-sanity';
 //Import  {createClient} from 'https://esm.sh/@sanity/client
 import { apiVersion, dataset, projectId } from '@/sanity/env';
+//
+import  imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
     projectId,
@@ -24,3 +26,8 @@ export const client = createClient({
     Cons: Slightly slower response time and higher resource usage.
     */
 })
+
+// Helper for images URLS
+ const Builder = imageUrlBuilder(client)
+export const urlFor = (source: string) => Builder.image(source);
+
